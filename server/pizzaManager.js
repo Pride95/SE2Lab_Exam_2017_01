@@ -142,13 +142,11 @@ var insertPizza = function insertPizza(pizza)
 var updatePizzaPrice = function updatePizzaPrice(price, increment, lower)
 {
     var pizzeModificate = [];
-    console.log(price);
     
     for(i=0; i < menu.length; i++)
     {
         if(menu[i].price < price && lower == "true")
         {
-            console.log("ne modifica uno");
             menu[i].price = menu[i].price + increment;
             pizzeModificate.push(menu[i]);
         }

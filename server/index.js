@@ -314,7 +314,7 @@ app.post('/updatePizzasByPrice', function(request, response)
 		//aceptable input
 		//search for a pizza
 		var pizza = [] ;
-        pizza = pizzaManager.updatePizzaPrice(price, increment, lower);
+        pizza = pizzaManager.updatePizzaPrice(parseFloat(price), parseFloat(increment), lower);
         //pizza = pizzaManager.getMenu();
 		//if exists
 		if (pizza != null)
